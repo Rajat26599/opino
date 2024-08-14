@@ -1,7 +1,7 @@
 import Channels from "@/layouts/home/Channels"
 import QuestionCard from "@/layouts/home/QuestionCard"
 import Trending from "@/layouts/home/Trending"
-import { View, StyleSheet, SafeAreaView, ScrollView, Image } from "react-native"
+import { StyleSheet, SafeAreaView, ScrollView, Image } from "react-native"
 import Hero from '@/assets/images/swimming-hero.jpg'
 import Navbar from "@/layouts/home/Navbar"
 

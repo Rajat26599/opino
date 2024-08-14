@@ -10,7 +10,7 @@ const QuestionCard = () => {
         <View style={{marginTop:20}}>
         {
             [...Array(8)].map((_, index) =>  (
-                <Link href='../QuestionPage'>
+                <Link key={index} href='../QuestionPage'>
                     <Card key={index} style={{marginBottom: index==7 ? 0 : 10}}>
                         <View style={styles.contentContainer}>
                             <View>

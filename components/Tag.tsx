@@ -1,15 +1,11 @@
 import { PropsWithChildren } from "react"
-import { StyleSheet, Text, View, ViewStyle } from "react-native"
-import { ThemedText } from "./ThemedText"
+import { StyleSheet, Text, View } from "react-native"
 
-type Props = ViewStyle & PropsWithChildren & {
-    key?: number
-}
 
-const Tag = (props: Props) => {
-    const { key, children, style } = props
+const Tag = (props: PropsWithChildren) => {
+    const { children } = props
     return (
-        <View key={key} style={[styles.container, styles.common, style]}>
+        <View style={[styles.container, styles.common]}>
             <Text style={[styles.tag, styles.common]}>
                 {children}
             </Text>
@@ -25,6 +21,7 @@ const styles = StyleSheet.create({
         borderColor: '#eee',
         borderWidth: 1,
         padding: 3,
+        marginRight: 10,
     },
     tag: {
         backgroundColor: '#ededed',

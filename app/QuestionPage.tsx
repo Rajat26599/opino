@@ -3,6 +3,7 @@ import QuestionCard from "@/layouts/questionPage/QuestionCard"
 import { Ionicons } from "@expo/vector-icons"
 import { SafeAreaView, ScrollView, View, StyleSheet, Image, Pressable } from "react-native"
 import { router } from "expo-router"
+import Chart from "@/layouts/questionPage/Chart"
 
 const QuestionPage = () => {
 
@@ -19,6 +20,7 @@ const QuestionPage = () => {
                     <Ionicons name="share-social" size={20} />
                 </View>
                 <QuestionCard />
+                <Chart />
             </ScrollView>
         </SafeAreaView>
     )

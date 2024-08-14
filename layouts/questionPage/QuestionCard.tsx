@@ -14,9 +14,11 @@ const QuestionCard = () => {
             <View style={styles.tags}>
                 {
                     tags.map((tag, index) => (
-                        <Tag key={index} style={{marginRight:10}}>
-                            {tag}
-                        </Tag>
+                        <View key={index}>
+                            <Tag>
+                                {tag}
+                            </Tag>
+                        </View>
                     ))
                 }
             </View>
